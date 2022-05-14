@@ -1,0 +1,24 @@
+<body>
+    <mat-tab-group mat-align-tabs="center"> 
+        <mat-tab label="Értékelések">
+            <button (click)="refreshRating()">Adatok frissítése</button>
+            <div #lineChart echarts [options]="ratingChartOptionDefault" class="chart"></div>
+            <div #radarChart echarts [options]="radarOptionDefault" class="chart"></div>
+        </mat-tab>
+        <mat-tab label="Lejátszott menetek">
+            <button (click)="refreshFrequency()">Adatok frissítése</button>
+            <div #frequencyChart echarts [options]="frequencyChartOptionDefault" class="chart"></div>
+        </mat-tab>
+        <mat-tab label="Fejlődés">
+            <div class="controls">
+                <mat-select matInput [(ngModel)]="defaultValue" [formControl]="gameFormControl">
+                    <mat-option *ngFor="let game of games" [value]="game.value">
+                    {{game.viewValue}}
+                    </mat-option>
+                </mat-select>
+                <button (click)="refreshDevelopment()">Adatok frissítése</button>
+            </div>
+            <div #scatterChart echarts [options]="scatterChartOptionDefault" class="chart"></div>
+        </mat-tab>
+    </mat-tab-group>    
+</body>

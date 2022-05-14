@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "cogniludos": {
+      "hosting": {
+        "cogniludos": [
+          "cogniludos"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "cogniludos"
+  }
+}

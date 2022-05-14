@@ -1,0 +1,23 @@
+<style>
+    button {
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 10px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 16px;
+        background-color: #ffc107;
+    }
+</style>
+<h1 mat-dialog-title>Sorozat</h1>
+<div mat-dialog-content>A játék 4/5/6 körből áll.</div>
+<div mat-dialog-content>Minden körben megjelenik egy hiányos sorozat (lent) a képernyőn.</div>
+<div mat-dialog-content>A rendelkezésre álló számokat (fent) kell behelyettesíteni a megfelelő helyre, hogy a sorozat helyes legyen.</div>
+<div mat-dialog-content>A sorozat hossza minden körben nő, minden 2. helyre (a 0-k helyére) kell egy számot illeszteni.</div>
+<div mat-dialog-content>A megfelelő helyre tett számok pontot érnek.</div>
+<div mat-dialog-content>Az utolsó kör után a játék véget ér és megtekinthető a végső pontszám.</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Bezárás</button>
+</div>

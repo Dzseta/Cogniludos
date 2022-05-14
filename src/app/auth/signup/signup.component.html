@@ -1,0 +1,72 @@
+<main>
+  <section>
+    <img src="../../../favicon.png" alt="LOGO" class="bi me-2" width="32" height="32">
+    <h1 class="h3 mb-3 fw-normal">Regisztráció</h1>
+
+    <form fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayoutGap="10px"
+      [formGroup]="signupForm"
+      (ngSubmit)="onSubmit()">
+
+      <mat-form-field>
+        <mat-label>Felhasználónév</mat-label>
+        <input type="text" matInput placeholder="PeldaNev01" formControlName="username">
+        <mat-error *ngIf="signupForm.get('username')!.hasError('usedUsername')">Ez a név már foglalt.</mat-error>
+        <mat-error *ngIf="signupForm.get('username')!.hasError('required')">A mező nem lehet üres.</mat-error>
+        <mat-error *ngIf="!signupForm.get('username')!.hasError('required') && !signupForm.get('username')!.hasError('usedUsername')">Helytelen felhasználónév.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Email cím</mat-label>
+        <input type="email" matInput placeholder="pelda@cim.hu" formControlName="email">
+        <mat-error *ngIf="signupForm.get('email')!.hasError('usedEmail')">Ez az email cím már használatban van.</mat-error>
+        <mat-error *ngIf="signupForm.get('email')!.hasError('required')">Email cím megadása <strong>kötelező</strong></mat-error>
+        <mat-error *ngIf="!signupForm.get('email')!.hasError('usedEmail') && !signupForm.get('email')!.hasError('required')">Helytelen email cím</mat-error>
+      </mat-form-field>
+
+      <mat-form-field hintLabel="A jelszónak legalább {{minPw}} karakterből kell állnia">
+        <mat-label>Jelszó</mat-label>
+        <input type="password" matInput placeholder="Jelszo123" formControlName="password" (input)="onPasswordInput()">
+        <mat-error *ngIf="signupForm.get('password')!.hasError('required')">Jelszó megadása kötelező</mat-error>
+        <mat-error *ngIf="signupForm.get('password')!.hasError('minlength')">A jelszónak legalább {{minPw}} karakterből kell álnia</mat-error>
+      </mat-form-field>
+
+      <mat-form-field hintLabel="Meg kell egyeznie a jelszóval">
+        <mat-label>Jelszó megerősítése</mat-label>
+        <input type="password" matInput placeholder="Jelszo123" formControlName="passwordRe" (input)="onPasswordInput()">
+        <mat-error *ngIf="signupForm.get('passwordRe')!.hasError('required')">Kérjük, erősítse meg a jelszavát</mat-error>
+        <mat-error *ngIf="signupForm.get('passwordRe')!.hasError('passwordMismatch')">A jelszavak nem egyeznek meg</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Születési dátum</mat-label>
+        <input type="date" matInput placeholder="2000.01.01" formControlName="date">
+        <mat-error *ngIf="signupForm.get('date')!.hasError('required')">Helytelen dátum.</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Nem</mat-label>
+        <mat-select matInput formControlName="gender">
+          <mat-option *ngFor="let gender of genders" [value]="gender.value">
+            {{gender.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Tanulmányok</mat-label>
+        <mat-select matInput formControlName="education">
+          <mat-option *ngFor="let education of educations" [value]="education.value">
+            {{education.viewValue}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <mat-checkbox name="agree" required color="primary" formControlName="terms">Elfogadom a felhasználói szerződést.</mat-checkbox>
+      <button type="submit" mat-raised-button>Regisztráció</button>
+    </form>
+    <p>Már rendelkezik profillal?</p>
+    <p><a [routerLink]="'/login'" class="nav-link px-2 link-dark">Lépjen be itt.</a></p>
+  </section>
+</main>

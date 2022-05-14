@@ -1,0 +1,32 @@
+<main>
+  <section>
+    <img src="../../../favicon.png" alt="LOGO" class="bi me-2" width="32" height="32">
+    <h1 class="h3 mb-3 fw-normal">Bejelentkezés</h1>
+    
+    <form
+      fxLayout="column"
+      fxLayoutAlign="center center"
+      fxLayoutGap="10px"
+      [formGroup]="loginForm"
+      (ngSubmit)="onSubmit()">
+    
+      <mat-form-field>
+        <mat-label>Email cím</mat-label>
+        <input type="email" matInput placeholder="pelda@cim.hu" formControlName="email">
+        <mat-error *ngIf="loginForm.get('email')!.hasError('required')">Hiányzó email cím</mat-error>
+        <mat-error *ngIf="loginForm.get('email')!.hasError('email') && !loginForm.get('email')!.hasError('required')">Helytelen email cím</mat-error>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Jelszó</mat-label>
+        <input type="password" matInput placeholder="Jelszo123" formControlName="password">
+        <mat-error>Érvénytelen vagy hiányzó jelszó.</mat-error>
+      </mat-form-field>
+
+      <button type="submit" mat-raised-button>Belép</button>
+    </form>
+
+    <p class="mt-5 mb-3 text-muted">&copy; 2022</p>
+
+  </section>
+</main>

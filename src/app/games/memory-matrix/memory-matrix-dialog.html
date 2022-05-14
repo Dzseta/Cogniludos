@@ -1,0 +1,24 @@
+<style>
+    button {
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 10px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 16px;
+        background-color: #ffc107;
+    }
+</style>
+<h1 mat-dialog-title>Memória Mátrix</h1>
+<div mat-dialog-content>A játék 5/10/15 körből áll.</div>
+<div mat-dialog-content>Minden kör kezdetén a mezők egy része sárga színre 3 másodpercre, ezeket a négyzeteket meg kell jegyezni.</div>
+<div mat-dialog-content>A 3 másodperc letelte után rá kell kattintani azokra a mezőkre, amelyek korábban ki lettek emelve.</div>
+<div mat-dialog-content>Minden körben annyi tipp áll rendelkezésre, amennyi a kiemelt négyzetek száma.</div>
+<div mat-dialog-content>A megtalált mezők 100 pontot érnek, a kihagyottak -100 pontot a kör végén.</div>
+<div mat-dialog-content>Ha a játékos elhasználta az összes tippjét megjelennek a kihagyott mezők, majd pár másodperc múlva kezdődik a következő kör.</div>
+<div mat-dialog-content>Az utolsó kör után a játék véget ér és a játékos megtekintheti a végső pontszámát.</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Bezárás</button>
+</div>

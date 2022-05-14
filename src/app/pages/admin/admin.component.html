@@ -1,0 +1,210 @@
+<body>
+    <mat-tab-group mat-align-tabs="center"> 
+        <mat-tab label="Felhasználói statisztikák">
+            <!-- Filter form -->
+            <form fxLayout="column"
+            fxLayoutAlign="center center"
+            fxLayoutGap="10px"
+            [formGroup]="filterForm"
+            class="statsForm"
+            (ngSubmit)="submitSearch()">
+
+                <mat-form-field>
+                    <mat-label>Felhasználónév</mat-label>
+                    <input type="text" matInput formControlName="username">
+                </mat-form-field>
+            
+                <mat-form-field>
+                    <mat-label>Születési dátum minimum</mat-label>
+                    <input type="date" matInput formControlName="dateMin">
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Születési dátum maximum</mat-label>
+                    <input type="date" matInput formControlName="dateMax">
+                </mat-form-field>
+            
+                <mat-form-field>
+                    <mat-label>Nem</mat-label>
+                    <mat-select matInput formControlName="gender">
+                        <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                            {{gender.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+            
+                <mat-form-field>
+                    <mat-label>Tanulmányok</mat-label>
+                    <mat-select formControlName="education">
+                        <mat-option *ngFor="let education of educations" [value]="education.value">
+                            {{education.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Játék</mat-label>
+                    <mat-select formControlName="game">
+                        <mat-option *ngFor="let game of games" [value]="game.value">
+                            {{game.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Nehézség</mat-label>
+                    <mat-select formControlName="difficulty">
+                        <mat-option *ngFor="let difficulty of difficulties" [value]="difficulty.value">
+                            {{difficulty.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-checkbox name="agree" [color]="'primary'" formControlName="premium">Prémium</mat-checkbox>
+                <button type="submit" mat-raised-button>Szűrés</button>
+            </form>
+
+            <mat-divider></mat-divider>
+
+            <!-- Users table -->
+            <table mat-table [dataSource]="chosenUsersData" matSort>
+
+                <!-- username column -->
+                <ng-container matColumnDef="username">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Felhasználónév
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+                </ng-container>
+
+                <!-- birthday column -->
+                <ng-container matColumnDef="birthdate">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Születési dátum
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.birthdate}} </td>
+                </ng-container>
+
+                <!-- gender column -->
+                <ng-container matColumnDef="gender">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Nem
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.gender}} </td>
+                </ng-container>
+
+                <!-- education column -->
+                <ng-container matColumnDef="education">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Iskolázottság
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.education}} </td>
+                </ng-container>
+
+                <!-- premium column -->
+                <ng-container matColumnDef="premium">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Prémium
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.premium}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+            </table>
+            <mat-paginator [pageSizeOptions]="[10, 25, 100]"
+                            showFirstLastButtons 
+                            aria-label="Oldalváltás">
+            </mat-paginator>
+
+            <mat-divider></mat-divider>
+
+            <!-- Scores table -->
+            <table mat-table [dataSource]="chosenScoresData" matSort>
+
+                <!-- username column -->
+                <ng-container matColumnDef="username">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Felhasználónév
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.username}} </td>
+                </ng-container>
+
+                <!-- game column -->
+                <ng-container matColumnDef="game">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Játék kódja
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.game}} </td>
+                </ng-container>
+
+                <!-- score column -->
+                <ng-container matColumnDef="score">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Pontszám
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.score}} </td>
+                </ng-container>
+
+                <!-- difficulty column -->
+                <ng-container matColumnDef="difficulty">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Nehézség
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.difficulty}} </td>
+                </ng-container>
+
+                <!-- date column -->
+                <ng-container matColumnDef="date">
+                    <th mat-header-cell *matHeaderCellDef mat-sort-header>
+                        Dátum
+                    </th>
+                    <td mat-cell *matCellDef="let element"> {{element.date}} </td>
+                </ng-container>
+
+                <tr mat-header-row *matHeaderRowDef="displayedColumns2"></tr>
+                <tr mat-row *matRowDef="let row; columns: displayedColumns2;"></tr>
+            </table>
+            <mat-paginator [pageSizeOptions]="[10, 25, 100]"
+                            showFirstLastButtons 
+                            aria-label="Oldalváltás">
+            </mat-paginator>
+        </mat-tab>
+
+        <!-- New question tab -->
+        <mat-tab label="Új kérdés létrehozása">
+            <form fxLayout="column"
+            fxLayoutAlign="center center"
+            fxLayoutGap="10px"
+            [formGroup]="questionForm"
+            class="questionForm"
+            (ngSubmit)="submitQuestion()">
+
+                <mat-form-field>
+                    <mat-label>Kérdés kategóriája</mat-label>
+                    <mat-select matInput formControlName="category">
+                        <mat-option *ngFor="let category of categories" [value]="category.value">
+                        {{category.viewValue}}
+                        </mat-option>
+                    </mat-select>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Kérdés</mat-label>
+                    <textarea matInput formControlName="question"></textarea>
+                </mat-form-field>
+
+                <mat-form-field>
+                    <mat-label>Válasz</mat-label>
+                    <textarea matInput formControlName="answer"></textarea>
+                </mat-form-field>
+                <button type="submit" mat-raised-button>Kérdés létrehozása</button>
+            </form>
+        </mat-tab>
+
+        <!-- Charts -->
+        <mat-tab label="Diagramok">
+            <div #lineChart echarts [options]="ratingChartOptionDefault" class="chart"></div>
+        </mat-tab>
+    </mat-tab-group>    
+</body>

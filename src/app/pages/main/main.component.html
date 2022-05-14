@@ -1,0 +1,12 @@
+<body>
+    <h1>Üdvözöljük a Cogniludos oldalán!</h1>
+    <div>
+        <p>A Cogniludos oldal célja az emberek kognitív képességeinek fejlesztése játékosan. A különböző memória- és logikai játékok egyidősek az emberiséggel. Segítségükkel bárki egyszerűen, szórakozatóan javíthatja a saját kognitív képességet, legyen akár fiatal, akár felnőtt. A regisztráció után bárki bele is vetheti magát a kalandokba!</p>
+        <div>
+            <button mat-raised-button *ngIf="!loggedInUser" [routerLink]="'/signup'">Regisztráljon most</button>
+            <button mat-raised-button *ngIf="loggedInUser" [routerLink]="'/games'">Játékok</button>
+            <button mat-raised-button [routerLink]="'/about-us'">Rólunk bővebben</button>
+        </div>
+    </div>
+    <img src="../../../assets/banner.png" alt="LOGO">
+</body>

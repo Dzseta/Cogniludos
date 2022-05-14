@@ -1,0 +1,41 @@
+html {
+    min-height: calc(100vh - 104px);
+    height: fit-content;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 50px;
+    box-sizing: border-box;
+    background-color: #101010;
+    color: #fffff5;
+}
+
+h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 20px;
+}
+
+mat-expansion-panel {
+    width: 60vw;
+    margin: 0px auto;
+    background-color: #e6e6e6;
+    margin-bottom: 5px;
+}
+
+mat-expansion-panel-header {
+    font-weight: 500;
+}
+
+mat-panel-description {
+    color: black;
+}
+
+mat-expansion-panel.mat-expanded {
+    background-color: #ffc107;
+}

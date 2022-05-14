@@ -1,0 +1,24 @@
+<style>
+    button {
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 10px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 16px;
+        background-color: #ffc107;
+    }
+</style>
+<h1 mat-dialog-title>Gyors Párosítás</h1>
+<div mat-dialog-content>A játék 60 másodpercig tart.</div>
+<div mat-dialog-content>Sorban jönnek egymás után a kártyák, mindegyiknek a közepén egy színes formával.</div>
+<div mat-dialog-content>A játékosnak a képen látható gombok segítségével el kell döntenie, hogy az éppen látható kártya megegyezik-e az előzőleg látottal.</div>
+<div mat-dialog-content>Ha igen, akkor a jobbra mutató gombot kell lenyomni.</div>
+<div mat-dialog-content>Ha nem, akkor a balra mutatót.</div>
+<div mat-dialog-content>A játékos 100 pontot kap minden helyesen eltalált alakzat után és 100-at veszít a hibák után.</div>
+<div mat-dialog-content>Az idő lejártával a játék véget ér és megtekinthető a végső pontszám.</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Bezárás</button>
+</div>

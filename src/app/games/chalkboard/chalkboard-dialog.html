@@ -1,0 +1,25 @@
+<style>
+    button {
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 10px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 16px;
+        background-color: #ffc107;
+    }
+</style>
+<h1 mat-dialog-title>Krétatábla</h1>
+<div mat-dialog-content>A játék 60 másodpercig tart.</div>
+<div mat-dialog-content>Mindig 2 vagy 3 matematikai művelet szerepel egymás mellett.</div>
+<div mat-dialog-content>El kell dönteni, hogy melyik művelet végeredménye a magasabb szám.</div>
+<div mat-dialog-content>Ha a baloldali, akkor a bal gamot kell lenyomni.</div>
+<div mat-dialog-content>Ha a jobboldali, akkor a jobb gombot.</div>
+<div mat-dialog-content>Ha egyenlő, akkor a középsőt.</div>
+<div mat-dialog-content>Minden helyes döntés 100 pontot ér, a helytelenek után 100 pontlevonás jár.</div>
+<div mat-dialog-content>A 60 másodperc lejárta után a játék véget ér és a játékos megtekintheti a végső pontszámát.</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Bezárás</button>
+</div>

@@ -1,0 +1,69 @@
+<body>
+    <mat-stepper [linear]="true" #stepper>
+        <!-- Rules -->
+        <mat-step label="Szabályok" editable="false" state="rules" [completed]="false">
+            <h2>Folytonosság</h2>
+            <img class="banner" mat-card-image src="../../assets/coBanner.png" alt="Folytonosság borítókép" width="400" >
+            <div class="rules">
+                <button mat-button (click)="startGame(stepper)">Kezdés</button>
+                <button mat-button (click)="openDialog()">Szabályok</button>
+            </div>
+        </mat-step>
+        
+        <!-- Game -->
+        <mat-step label="Folytonosság" editable="false" state="game" [completed]="false">
+            <ul>
+                <li>Szint: {{ level }}/{{ maxLevel }}</li>
+                <li>Nehézség: {{ difficulty }}</li>
+                <li>Pontszám: {{ score }}</li>
+            </ul>
+            <div cdkDropList class="words-list" (cdkDropListDropped)="drop($event)">
+                <div class="word-box" *ngFor="let word of currentWords" cdkDrag [cdkDragDisabled]="!isPlayable" style="background-color:{{borderColors[currentWords.indexOf(word)]}}">{{word}}</div>
+                <button mat-button [disabled]="!isPlayable" (click)="confirm(stepper)">Véglegesít</button>
+            </div>
+        </mat-step>
+    
+        <!-- Scores -->
+        <mat-step label="Eredmények" editable="false" state="scores">
+            <h2>Elért eredmény:</h2>
+            <table>
+                <tr>
+                    <th>Pontszám: {{score}}</th>
+                    <th>Nehézség: {{difficulty}}</th>
+                    <th>Találati arány: {{(right/(right+wrong)).toFixed(2)}}</th>
+                </tr>
+            </table>
+            <h2>Legjobb eredmények:</h2>
+            <table>
+                <tr>
+                    <th>Helyezés</th>
+                    <th>Pontszám</th>
+                    <th>Nehézség</th>
+                    <th>Dátum</th>
+                </tr>
+              
+                <tr *ngFor="let score of scores; let i = index">
+                    <td>{{i + 1}}.</td>
+                    <td>{{score.score}}</td>
+                    <td>{{score.difficulty}}</td>
+                    <td>{{score.date}}</td>
+                </tr>
+            </table>
+            <div>
+                <button mat-button [routerLink]="'/games'">Játékok menü</button>
+                <button mat-button (click)="restart(stepper)">Új játék</button>
+            </div>
+        </mat-step>
+    
+        <!-- Icons -->
+        <ng-template matStepperIcon="rules">
+            <mat-icon>chrome_reader_mode</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="game">
+            <mat-icon>videogame_asset</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="scores">
+            <mat-icon>list_alt</mat-icon>
+        </ng-template>
+    </mat-stepper>
+</body>

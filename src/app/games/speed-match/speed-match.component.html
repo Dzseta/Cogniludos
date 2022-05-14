@@ -1,0 +1,76 @@
+<body>
+    <mat-stepper [linear]="true" #stepper>
+
+        <!-- Rules -->
+        <mat-step label="Szabályok" editable="false" state="rules" [completed]="false">
+            <h2>Gyors Párosítás</h2>
+            <img class="banner" mat-card-image src="../../assets/smBanner.png" alt="Gyors párosítás borítókép" width="400" >
+            <div class="buttons">
+                <button mat-button (click)="startGame(stepper)">Kezdés</button>
+                <button mat-button (click)="openDialog()">Szabályok</button>
+            </div>
+        </mat-step>
+        
+        <!-- Game -->
+        <mat-step label="Gyors Párosítás" editable="false" state="game" [completed]="false">
+            <ul>
+                <li>Nehézség: {{ difficulty }}</li>
+                <li>Pontszám: {{ score }}</li>
+                <li>Hátralévő idő: {{counter | formatTime}}</li>
+            </ul>
+            <div class="container">
+                <div class="center">Megegyezik a JELENLEGI kártya az ELŐZŐVEL?</div>
+                <div class="board">
+                    <img class="card left" mat-card-image src="../../../assets/smBackcover.png" alt="Kártya hátlap">
+                    <img class="card right" mat-card-image src={{card}} alt="Kártya előlap" [@cardState]="stateName">
+                </div>
+                <div class="buttons" *ngIf="started">
+                    <button mat-button (click)="matches(false)"><mat-icon>arrow_back_ios</mat-icon> NEM</button>
+                    <button mat-button (click)="matches(true)">IGEN <mat-icon>arrow_forward_ios</mat-icon></button>
+                </div>
+            </div>
+        </mat-step>
+    
+        <!-- Scores -->
+        <mat-step label="Eredmények" editable="false" state="scores">
+            <h2>Elért eredmény:</h2>
+            <table>
+                <tr>
+                    <th>Pontszám: {{score}}</th>
+                    <th>Nehézség: {{difficulty}}</th>
+                    <th>Találati arány: {{(right/(right+wrong)).toFixed(2)}}</th>
+                </tr>
+            </table>
+            <h2>Legjobb eredmények:</h2>
+            <table>
+                <tr>
+                    <th>Helyezés</th>
+                    <th>Pontszám</th>
+                    <th>Nehézség</th>
+                    <th>Dátum</th>
+                </tr>
+              
+                <tr *ngFor="let score of scores; let i = index">
+                    <td>{{i+1}}.</td>
+                    <td>{{score.score}}</td>
+                    <td>{{score.difficulty}}</td>
+                    <td>{{score.date}}</td>
+                </tr>
+            </table>
+            <div>
+                <button mat-button [routerLink]="'/games'">Játékok menü</button>
+                <button mat-button (click)="restart(stepper)">Új játék</button>
+            </div>
+        </mat-step>
+    
+        <ng-template matStepperIcon="rules">
+            <mat-icon>chrome_reader_mode</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="game">
+            <mat-icon>videogame_asset</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="scores">
+            <mat-icon>list_alt</mat-icon>
+        </ng-template>
+    </mat-stepper>
+</body>

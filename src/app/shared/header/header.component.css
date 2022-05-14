@@ -1,0 +1,83 @@
+.container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    height: 32px;
+    max-width: 100%;
+    background-color: #2a2a2a;
+    color: #fffff5;
+}
+
+button {
+    background-color: #2a2a2a;
+    border: 2px solid #2a2a2a;
+    color: #fffff5;
+    padding: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    line-height: normal;
+}
+
+button:hover {
+    background-color: #4c4b4b;
+}
+
+.authbutton {
+    background-color: #ffc107;
+    border: 2px solid #2a2a2a;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition-duration: 0.4s;
+    margin-left: 10px;
+}
+  
+.authbutton:hover {
+    background-color: #b18707;
+}
+
+.buttons {
+    margin-left: auto;
+    margin-right: 50px;
+    width: 250px;
+    text-align: right;
+}
+
+.nav {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    margin-left: 50px;
+    margin-right: auto;
+    width: 250px;
+}
+
+.sidenav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    background: #2a2a2a;
+    border: 2px solid #000000;
+}
+
+.sidenav-container {
+    position: absolute;
+    left: 0px;
+}
+
+mat-icon {
+    vertical-align: sub;
+}
+
+a{
+    width: 100%;
+    font-weight: bold;
+    text-align: left;
+    color: #fffff5;
+}

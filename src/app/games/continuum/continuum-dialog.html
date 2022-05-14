@@ -1,0 +1,24 @@
+<style>
+    button {
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 10px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 16px;
+        background-color: #ffc107;
+    }
+</style>
+<h1 mat-dialog-title>Folytonosság</h1>
+<div mat-dialog-content>A játék 3/4/5 körből áll.</div>
+<div mat-dialog-content>Minden körben megjelenik 3-7 szó a képernyőn egymás alatt.</div>
+<div mat-dialog-content>Ezeket a szavakat kell jelentés szerint sorba állítani.</div>
+<div mat-dialog-content>A legpozitívabb vagy legnagyobb jelentésű szó kerül legfelülre.</div>
+<div mat-dialog-content>A legnegatívabb vagy legkisebb legalulra.</div>
+<div mat-dialog-content>A megfelelő helyre tett szavak pontot érnek.</div>
+<div mat-dialog-content>Az utolsó kör után a játék véget ér és megtekinthető a végső pontszám.</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Bezárás</button>
+</div>

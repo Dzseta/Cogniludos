@@ -1,0 +1,126 @@
+body {
+    min-height: calc(100vh - 104px);
+    height: fit-content;
+    max-width: 100%;
+    background-color: #101010;
+    text-align: center;
+    padding: 15px 0px; 
+}
+
+mat-stepper {
+    margin: 25px auto;
+    width: 60vw;
+    height: 80vh;
+    background-color: #fffff5;
+    border-radius: 32px;
+}
+
+::ng-deep .mat-horizontal-stepper-header{
+    pointer-events: none !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected{
+    background-color: black;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-done{
+    background-color: black;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 16px;
+}
+
+ul {
+    background-color: #101010;
+    color: #e6e6e6;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    padding-right: 50px;
+}
+
+.center {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    padding: 15px;
+    color: #e6e6e6;
+    background-color: rgba(0, 0, 0, 0.351);
+}
+
+.background {
+    height: fit-content;
+    background-image: url("../../../assets/chalkboard.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 16px;
+    color: #e6e6e6;
+}
+
+.board {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0px;
+    height: 40vh;   
+}
+
+.card {
+    margin: auto;
+    font-weight: bolder;
+    font-size: 30px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    padding: 30px;
+    width: 20vw;
+    height: fit-content;
+    text-align: center;
+    background-color: black;
+    border-radius: 16px;
+}
+
+.upicon {
+    line-height: 0.5;
+}
+
+.buttons {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.351);
+    width: fit-content;
+    border-radius: 32px;
+}
+
+button {
+    width: 120px;
+    height: 40px;
+    vertical-align: bottom;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 16px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}

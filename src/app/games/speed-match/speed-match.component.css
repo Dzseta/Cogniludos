@@ -1,0 +1,104 @@
+body {
+    min-height: calc(100vh - 104px);
+    height: fit-content;
+    max-width: 100%;
+    background-color: #101010;
+    text-align: center;
+    padding: 15px 0px;  
+}
+
+mat-stepper {
+    margin: 25px auto;
+    width: 60vw;
+    height: 80vh;
+    background-color: #fffff5;
+    border-radius: 32px;
+}
+
+::ng-deep .mat-horizontal-stepper-header{
+    pointer-events: none !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: black;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-done{
+    background-color: black;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 16px;
+}
+
+ul {
+    background-color: #101010;
+    color: #e6e6e6;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    padding-right: 50px;
+}
+
+.container {
+    background-color: #101010;
+    color: #e6e6e6;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.board {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-gap: 0px;
+}
+
+.center {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.card {
+    margin: 20px auto 50px auto;
+    width: 12vw;
+    height: 12vw;
+}
+
+.left {
+    margin-right: 0px;
+}
+
+.right {
+    margin-left: 0px;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 16px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}

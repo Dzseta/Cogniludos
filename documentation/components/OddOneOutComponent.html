@@ -1,0 +1,1615 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cogniludos documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">cogniludos documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  OddOneOutComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/games/odd-one-out/odd-one-out.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-odd-one-out</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./odd-one-out.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./odd-one-out.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#columns" >columns</a>
+                            </li>
+                            <li>
+                                <a href="#countDown" >countDown</a>
+                            </li>
+                            <li>
+                                <a href="#counter" >counter</a>
+                            </li>
+                            <li>
+                                <a href="#currentUser" >currentUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog" >dialog</a>
+                            </li>
+                            <li>
+                                <a href="#difficulty" >difficulty</a>
+                            </li>
+                            <li>
+                                <a href="#maxNumberOfShapes" >maxNumberOfShapes</a>
+                            </li>
+                            <li>
+                                <a href="#numberOfShapes" >numberOfShapes</a>
+                            </li>
+                            <li>
+                                <a href="#oddOne" >oddOne</a>
+                            </li>
+                            <li>
+                                <a href="#rows" >rows</a>
+                            </li>
+                            <li>
+                                <a href="#score" >score</a>
+                            </li>
+                            <li>
+                                <a href="#scores" >scores</a>
+                            </li>
+                            <li>
+                                <a href="#shapeList" >shapeList</a>
+                            </li>
+                            <li>
+                                <a href="#shapes" >shapes</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#chooseOdd" >chooseOdd</a>
+                            </li>
+                            <li>
+                                <a href="#endGame" >endGame</a>
+                            </li>
+                            <li>
+                                <a href="#loadImages" >loadImages</a>
+                            </li>
+                            <li>
+                                <a href="#newGame" >newGame</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openDialog" >openDialog</a>
+                            </li>
+                            <li>
+                                <a href="#restart" >restart</a>
+                            </li>
+                            <li>
+                                <a href="#startGame" >startGame</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialog: MatDialog, scoreService: <a href="../injectables/ScoreService.html" target="_self">ScoreService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:66</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>scoreService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ScoreService.html" target="_self" >ScoreService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="chooseOdd"></a>
+                    <span class="name">
+                        <span ><b>chooseOdd</b></span>
+                        <a href="#chooseOdd"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>chooseOdd(idx: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="141"
+                            class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:141</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>idx</td>
+                                    <td>
+                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="endGame"></a>
+                    <span class="name">
+                        <span ><b>endGame</b></span>
+                        <a href="#endGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>endGame(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="154"
+                            class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:154</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="loadImages"></a>
+                    <span class="name">
+                        <span ><b>loadImages</b></span>
+                        <a href="#loadImages"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>loadImages()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="172"
+                            class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:172</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newGame"></a>
+                    <span class="name">
+                        <span ><b>newGame</b></span>
+                        <a href="#newGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newGame()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="107"
+                            class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:107</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="70"
+                            class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:70</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialog"></a>
+                    <span class="name">
+                        <span ><b>openDialog</b></span>
+                        <a href="#openDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="180"
+                            class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:180</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="restart"></a>
+                    <span class="name">
+                        <span ><b>restart</b></span>
+                        <a href="#restart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>restart(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="166"
+                            class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:166</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startGame"></a>
+                    <span class="name">
+                        <span ><b>startGame</b></span>
+                        <a href="#startGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startGame(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="79"
+                            class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:79</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="columns"></a>
+                    <span class="name">
+                        <span ><b>columns</b></span>
+                        <a href="#columns"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:17</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="countDown"></a>
+                    <span class="name">
+                        <span ><b>countDown</b></span>
+                        <a href="#countDown"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>Subscription | null</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:31</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="counter"></a>
+                    <span class="name">
+                        <span ><b>counter</b></span>
+                        <a href="#counter"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUser"></a>
+                    <span class="name">
+                        <span ><b>currentUser</b></span>
+                        <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:19</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialog"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialog</b></span>
+                        <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatDialog</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:68</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="difficulty"></a>
+                    <span class="name">
+                        <span ><b>difficulty</b></span>
+                        <a href="#difficulty"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:20</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxNumberOfShapes"></a>
+                    <span class="name">
+                        <span ><b>maxNumberOfShapes</b></span>
+                        <a href="#maxNumberOfShapes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="numberOfShapes"></a>
+                    <span class="name">
+                        <span ><b>numberOfShapes</b></span>
+                        <a href="#numberOfShapes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:18</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="oddOne"></a>
+                    <span class="name">
+                        <span ><b>oddOne</b></span>
+                        <a href="#oddOne"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="rows"></a>
+                    <span class="name">
+                        <span ><b>rows</b></span>
+                        <a href="#rows"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:16</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="score"></a>
+                    <span class="name">
+                        <span ><b>score</b></span>
+                        <a href="#score"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scores"></a>
+                    <span class="name">
+                        <span ><b>scores</b></span>
+                        <a href="#scores"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Score.html" target="_self" >Score[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shapeList"></a>
+                    <span class="name">
+                        <span ><b>shapeList</b></span>
+                        <a href="#shapeList"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>[]</code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[
+    &#x27;../../../assets/oooBlueCircle.png&#x27;,
+    &#x27;../../../assets/oooBlueLeftRect.png&#x27;,
+    &#x27;../../../assets/oooBlueRedRombus.png&#x27;,
+    &#x27;../../../assets/oooBlueRedSquare.png&#x27;,
+    &#x27;../../../assets/oooBlueRightRect.png&#x27;,
+    &#x27;../../../assets/oooBlueRombus.png&#x27;,
+    &#x27;../../../assets/oooBlueSquare.png&#x27;,
+    &#x27;../../../assets/oooBlueStar.png&#x27;,
+    &#x27;../../../assets/oooBlueTriangle.png&#x27;,
+    &#x27;../../../assets/oooRedCircle.png&#x27;,
+    &#x27;../../../assets/oooRedLeftRect.png&#x27;,
+    &#x27;../../../assets/oooRedRightRect.png&#x27;,
+    &#x27;../../../assets/oooRedRombus.png&#x27;,
+    &#x27;../../../assets/oooRedSquare.png&#x27;,
+    &#x27;../../../assets/oooRedStar.png&#x27;,
+    &#x27;../../../assets/oooRedTriangle.png&#x27;,
+    &#x27;../../../assets/oooRedYellowRombus.png&#x27;,
+    &#x27;../../../assets/oooRedYellowSquare.png&#x27;,
+    &#x27;../../../assets/oooYellowBlueRombus.png&#x27;,
+    &#x27;../../../assets/oooYellowBlueSquare.png&#x27;,
+    &#x27;../../../assets/oooYellowCircle.png&#x27;,
+    &#x27;../../../assets/oooYellowLeftRect.png&#x27;,
+    &#x27;../../../assets/oooYellowRightRect.png&#x27;,
+    &#x27;../../../assets/oooYellowRombus.png&#x27;,
+    &#x27;../../../assets/oooYellowSquare.png&#x27;,
+    &#x27;../../../assets/oooYellowStar.png&#x27;,
+    &#x27;../../../assets/oooYellowTriangle.png&#x27;
+  ]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shapes"></a>
+                    <span class="name">
+                        <span ><b>shapes</b></span>
+                        <a href="#shapes"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>any[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/games/odd-one-out/odd-one-out.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, OnInit } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { MatStepper } from &#x27;@angular/material/stepper&#x27;;
+import { Subscription, take, timer } from &#x27;rxjs&#x27;;
+import { Score } from &#x27;../../models/score&#x27;;
+import { ScoreService } from &#x27;../../shared/services/score.service&#x27;;
+
+@Component({
+  selector: &#x27;app-odd-one-out&#x27;,
+  templateUrl: &#x27;./odd-one-out.component.html&#x27;,
+  styleUrls: [&#x27;./odd-one-out.component.css&#x27;]
+})
+export class OddOneOutComponent implements OnInit {
+
+  // variables depending on difficulty
+  rows!: number;
+  columns!: number;
+  numberOfShapes!: number;
+  currentUser!: any;
+  difficulty!: string;
+  maxNumberOfShapes!: number;
+
+  // helping variables
+  shapes!: any[];
+  oddOne!: string;
+  
+  // fix variables
+  score!: number;
+
+  // countdown
+  countDown!: Subscription | null;
+  counter!: number;
+
+  // scores table
+  scores!: Score[];
+
+  // shapelist
+  shapeList &#x3D; [
+    &#x27;../../../assets/oooBlueCircle.png&#x27;,
+    &#x27;../../../assets/oooBlueLeftRect.png&#x27;,
+    &#x27;../../../assets/oooBlueRedRombus.png&#x27;,
+    &#x27;../../../assets/oooBlueRedSquare.png&#x27;,
+    &#x27;../../../assets/oooBlueRightRect.png&#x27;,
+    &#x27;../../../assets/oooBlueRombus.png&#x27;,
+    &#x27;../../../assets/oooBlueSquare.png&#x27;,
+    &#x27;../../../assets/oooBlueStar.png&#x27;,
+    &#x27;../../../assets/oooBlueTriangle.png&#x27;,
+    &#x27;../../../assets/oooRedCircle.png&#x27;,
+    &#x27;../../../assets/oooRedLeftRect.png&#x27;,
+    &#x27;../../../assets/oooRedRightRect.png&#x27;,
+    &#x27;../../../assets/oooRedRombus.png&#x27;,
+    &#x27;../../../assets/oooRedSquare.png&#x27;,
+    &#x27;../../../assets/oooRedStar.png&#x27;,
+    &#x27;../../../assets/oooRedTriangle.png&#x27;,
+    &#x27;../../../assets/oooRedYellowRombus.png&#x27;,
+    &#x27;../../../assets/oooRedYellowSquare.png&#x27;,
+    &#x27;../../../assets/oooYellowBlueRombus.png&#x27;,
+    &#x27;../../../assets/oooYellowBlueSquare.png&#x27;,
+    &#x27;../../../assets/oooYellowCircle.png&#x27;,
+    &#x27;../../../assets/oooYellowLeftRect.png&#x27;,
+    &#x27;../../../assets/oooYellowRightRect.png&#x27;,
+    &#x27;../../../assets/oooYellowRombus.png&#x27;,
+    &#x27;../../../assets/oooYellowSquare.png&#x27;,
+    &#x27;../../../assets/oooYellowStar.png&#x27;,
+    &#x27;../../../assets/oooYellowTriangle.png&#x27;
+  ];
+
+  constructor(public dialog: MatDialog, private scoreService: ScoreService) { }
+
+  ngOnInit(): void {
+    // initialize the fix variables
+    this.score &#x3D; 0;
+    this.scores &#x3D; [];
+    this.currentUser &#x3D; JSON.parse(localStorage.getItem(&#x27;user&#x27;)!);
+    this.loadImages();
+  }
+
+  // start the game
+  startGame(stepper: MatStepper) {
+    // calculate difficulty
+    this.scoreService.getAllScores(this.currentUser.email, &#x27;ooo&#x27;).then(scores &#x3D;&gt;{
+      if (scores.size &lt; 5) {
+        this.difficulty &#x3D; &#x27;easy&#x27;;
+        this.maxNumberOfShapes &#x3D; 4;
+      } else if (scores.size &lt; 10) {
+        this.difficulty &#x3D; &#x27;normal&#x27;;
+        this.maxNumberOfShapes &#x3D; 5;
+      } else {
+        this.difficulty &#x3D; &#x27;hard&#x27;;
+        this.maxNumberOfShapes &#x3D; 6;
+      }
+    });
+
+    stepper.selected!.completed &#x3D; true;
+    stepper.next();
+    this.counter &#x3D; 60;
+    this.rows &#x3D; 6;
+    this.columns &#x3D; 8;
+    this.shapes &#x3D; Array(this.rows*this.columns).fill(&#x27;../../../assets/oooEmpty.png&#x27;);
+    setTimeout(() &#x3D;&gt;{
+      this.newGame();
+      this.countDown &#x3D; timer(0, 1000).pipe(take(this.counter)).subscribe(() &#x3D;&gt; {--this.counter; if(this.counter&lt;&#x3D;0) {this.endGame(stepper)}} );
+    },3000);
+  }
+
+  // start a new round
+  newGame() {
+    // initialize variables
+    this.rows &#x3D; 6;
+    this.columns &#x3D; 8;
+    this.numberOfShapes &#x3D; Math.floor(Math.random() * this.maxNumberOfShapes) + 1;;
+    this.shapes &#x3D; Array(this.rows*this.columns).fill(&#x27;../../../assets/oooEmpty.png&#x27;);
+    
+    // choose odd one
+    let shapeNumber: number;
+    let placement!: number;
+    shapeNumber &#x3D; Math.floor(Math.random() * this.shapeList.length);
+    this.oddOne &#x3D; this.shapeList[shapeNumber];
+
+    // choose the positions for the shapes
+    for(let i&#x3D;0; i&lt;this.numberOfShapes; i++){
+      shapeNumber &#x3D; Math.floor(Math.random() * this.shapeList.length);
+      if (this.shapeList[shapeNumber] !&#x3D;&#x3D; this.oddOne &amp;&amp; !this.shapes.includes(this.shapeList[shapeNumber])) {
+        for (let j&#x3D;0; j&lt;3; j++) {
+          placement &#x3D; Math.floor(Math.random() * this.rows*this.columns);
+          if (this.shapes[placement] !&#x3D;&#x3D; &#x27;../../../assets/oooEmpty.png&#x27;) {
+            j--;
+          } else {
+            this.shapes[placement] &#x3D; this.shapeList[shapeNumber];
+          } 
+        }
+      } else {
+        i--;
+      }
+    }
+    placement &#x3D; Math.floor(Math.random() * this.rows*this.columns);
+    this.shapes[placement] &#x3D; this.oddOne;
+  }
+
+  // make the move
+  chooseOdd(idx: number, stepper: MatStepper) {
+    // if empty do nothing
+    if (this.shapes[idx] &#x3D;&#x3D;&#x3D; &#x27;../../../assets/oooEmpty.png&#x27;) return;
+    // make the move
+    if (this.shapes[idx] &#x3D;&#x3D;&#x3D; this.oddOne) {
+      this.score +&#x3D; 100;
+    } else {
+      this.score -&#x3D; 100;
+    }
+    this.newGame();
+  }
+
+  // end the game
+  endGame(stepper: MatStepper) {
+    const now &#x3D; new Date();
+    this.scoreService.create( { userEmail: this.currentUser.email, game: &#x27;ooo&#x27;, score: this.score, difficulty: &#x27;easy&#x27;, date: now.toLocaleDateString() } );
+    this.scoreService.getUserScores(this.currentUser.email, &#x27;ooo&#x27;).then(scores &#x3D;&gt;{
+      console.log(scores);
+      this.scores &#x3D; scores.docs.map(doc &#x3D;&gt; doc.data());
+    });
+    stepper.selected!.completed &#x3D; true;
+    stepper.next();
+  }
+
+  // play again
+  restart(stepper: MatStepper) {
+    this.score &#x3D; 0;
+    stepper.reset();
+  }
+
+  // load images
+  loadImages(){
+    for(let i &#x3D; 0; i &lt; this.shapeList.length; i++){
+      let img &#x3D; new Image();
+      img.src &#x3D; this.shapeList[i];
+    }
+  }
+
+  // open rules dialog
+  openDialog() {
+    this.dialog.open(MemoryMatrixDialog);
+  }
+
+}
+
+@Component({
+  selector: &#x27;odd-one-out-dialog&#x27;,
+  templateUrl: &#x27;odd-one-out-dialog.html&#x27;,
+})
+export class MemoryMatrixDialog {
+  
+  constructor(public dialog: MatDialog) {}
+
+  // close rules dialog
+  closeDialog() {
+    this.dialog.closeAll();
+  }
+}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;body&gt;
+    &lt;mat-stepper [linear]&#x3D;&quot;true&quot; #stepper&gt;
+        &lt;!-- Rules --&gt;
+        &lt;mat-step label&#x3D;&quot;Szabályok&quot; editable&#x3D;&quot;false&quot; state&#x3D;&quot;rules&quot; [completed]&#x3D;&quot;false&quot;&gt;
+            &lt;h2&gt;Kakukktojás&lt;/h2&gt;
+            &lt;img class&#x3D;&quot;banner&quot; mat-card-image src&#x3D;&quot;../../assets/oooBanner.png&quot; alt&#x3D;&quot;Kakukktojás borítókép&quot; width&#x3D;&quot;400&quot; &gt;
+            &lt;div class&#x3D;&quot;rules&quot;&gt;
+                &lt;button mat-button (click)&#x3D;&quot;startGame(stepper)&quot;&gt;Kezdés&lt;/button&gt;
+                &lt;button mat-button (click)&#x3D;&quot;openDialog()&quot;&gt;Szabályok&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/mat-step&gt;
+        
+        &lt;!-- Game --&gt;
+        &lt;mat-step label&#x3D;&quot;Kakukktojás&quot; editable&#x3D;&quot;false&quot; state&#x3D;&quot;game&quot; [completed]&#x3D;&quot;false&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Hátralévő idő: {{counter | formatTime}}&lt;/li&gt;
+                &lt;li&gt;Nehézség: {{ difficulty }}&lt;/li&gt;
+                &lt;li&gt;Pontszám: {{ score }}&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div class&#x3D;&quot;container&quot;&gt;
+                &lt;div class&#x3D;&quot;board&quot;&gt;
+                    &lt;app-shape
+                        *ngFor&#x3D;&quot;let val of shapes; let i &#x3D; index&quot;
+                        [value]&#x3D;&quot;val&quot;
+                        (click)&#x3D;&quot;chooseOdd(i, stepper)&quot;&gt;
+                    &lt;/app-shape&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/mat-step&gt;
+    
+        &lt;!-- Scores --&gt;
+        &lt;mat-step label&#x3D;&quot;Eredmények&quot; editable&#x3D;&quot;false&quot; state&#x3D;&quot;scores&quot;&gt;
+            &lt;h2&gt;Eredmények:&lt;/h2&gt;
+            &lt;table&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Helyezés&lt;/th&gt;
+                    &lt;th&gt;Pontszám&lt;/th&gt;
+                    &lt;th&gt;Nehézség&lt;/th&gt;
+                    &lt;th&gt;Dátum&lt;/th&gt;
+                &lt;/tr&gt;
+              
+                &lt;tr *ngFor&#x3D;&quot;let score of scores; let i &#x3D; index&quot;&gt;
+                    &lt;td&gt;{{i+1}}.&lt;/td&gt;
+                    &lt;td&gt;{{score.score}}&lt;/td&gt;
+                    &lt;td&gt;{{score.difficulty}}&lt;/td&gt;
+                    &lt;td&gt;{{score.date}}&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;div&gt;
+                &lt;button mat-button [routerLink]&#x3D;&quot;&#x27;/games&#x27;&quot;&gt;Játékok menü&lt;/button&gt;
+                &lt;button mat-button (click)&#x3D;&quot;restart(stepper)&quot;&gt;Új játék&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/mat-step&gt;
+    
+        &lt;!-- Icons --&gt;
+        &lt;ng-template matStepperIcon&#x3D;&quot;rules&quot;&gt;
+            &lt;mat-icon&gt;chrome_reader_mode&lt;/mat-icon&gt;
+        &lt;/ng-template&gt;
+        &lt;ng-template matStepperIcon&#x3D;&quot;game&quot;&gt;
+            &lt;mat-icon&gt;videogame_asset&lt;/mat-icon&gt;
+        &lt;/ng-template&gt;
+        &lt;ng-template matStepperIcon&#x3D;&quot;scores&quot;&gt;
+            &lt;mat-icon&gt;list_alt&lt;/mat-icon&gt;
+        &lt;/ng-template&gt;
+    &lt;/mat-stepper&gt;
+&lt;/body&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./odd-one-out.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">body {
+    min-height: calc(100vh - 104px);
+    height: fit-content;
+    width: 100vw;
+    background-color: #101010;
+    text-align: center;
+    padding: 15px 0px;  
+}
+
+mat-stepper {
+    margin: 25px auto;
+    width: 60vw;
+    min-height: 80vh;
+    background-color: #fffff5;
+    border-radius: 32px;
+}
+
+::ng-deep .mat-horizontal-stepper-header{
+    pointer-events: none !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: black;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-done{
+    background-color: black;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 16px;
+}
+
+ul {
+    background-color: #101010;
+    color: #e6e6e6;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    padding-right: 50px;
+}
+
+.container {
+    background-color: #101010;
+    color: #e6e6e6;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.board {
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 3vw 3vw 3vw 3vw 3vw 3vw 3vw 3vw;
+    grid-auto-rows: 3vw;
+    grid-gap: 20px;
+}
+
+app-shape {
+    cursor: pointer;
+}
+
+.rules {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 16px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><body>    <mat-stepper [linear]="true" #stepper>        <!-- Rules -->        <mat-step label="Szabályok" editable="false" state="rules" [completed]="false">            <h2>Kakukktojás</h2>            <img class="banner" mat-card-image src="../../assets/oooBanner.png" alt="Kakukktojás borítókép" width="400" >            <div class="rules">                <button mat-button (click)="startGame(stepper)">Kezdés</button>                <button mat-button (click)="openDialog()">Szabályok</button>            </div>        </mat-step>                <!-- Game -->        <mat-step label="Kakukktojás" editable="false" state="game" [completed]="false">            <ul>                <li>Hátralévő idő: {{counter | formatTime}}</li>                <li>Nehézség: {{ difficulty }}</li>                <li>Pontszám: {{ score }}</li>            </ul>            <div class="container">                <div class="board">                    <app-shape                        *ngFor="let val of shapes; let i = index"                        [value]="val"                        (click)="chooseOdd(i, stepper)">                    </app-shape>                </div>            </div>        </mat-step>            <!-- Scores -->        <mat-step label="Eredmények" editable="false" state="scores">            <h2>Eredmények:</h2>            <table>                <tr>                    <th>Helyezés</th>                    <th>Pontszám</th>                    <th>Nehézség</th>                    <th>Dátum</th>                </tr>                              <tr *ngFor="let score of scores; let i = index">                    <td>{{i+1}}.</td>                    <td>{{score.score}}</td>                    <td>{{score.difficulty}}</td>                    <td>{{score.date}}</td>                </tr>            </table>            <div>                <button mat-button [routerLink]="\'/games\'">Játékok menü</button>                <button mat-button (click)="restart(stepper)">Új játék</button>            </div>        </mat-step>            <!-- Icons -->        <ng-template matStepperIcon="rules">            <mat-icon>chrome_reader_mode</mat-icon>        </ng-template>        <ng-template matStepperIcon="game">            <mat-icon>videogame_asset</mat-icon>        </ng-template>        <ng-template matStepperIcon="scores">            <mat-icon>list_alt</mat-icon>        </ng-template>    </mat-stepper></body></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChalkboardComponent', 'selector': 'app-chalkboard'},{'name': 'ChalkboardDialog', 'selector': 'chalkboard-dialog'},{'name': 'ColourMatchComponent', 'selector': 'app-colour-match'},{'name': 'ColourMatchDialog', 'selector': 'colour-match-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContinuumComponent', 'selector': 'app-continuum'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'GamesComponent', 'selector': 'app-games'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'MemoryMatrixComponent', 'selector': 'app-memory-matrix'},{'name': 'MemoryMatrixDialog', 'selector': 'continuum-dialog'},{'name': 'MemoryMatrixDialog', 'selector': 'memory-matrix-dialog'},{'name': 'MemoryMatrixDialog', 'selector': 'odd-one-out-dialog'},{'name': 'MemoryMatrixDialog', 'selector': 'sequence-dialog'},{'name': 'ModifydataComponent', 'selector': 'app-modifydata'},{'name': 'OddOneOutComponent', 'selector': 'app-odd-one-out'},{'name': 'SequenceComponent', 'selector': 'app-sequence'},{'name': 'ShapeComponent', 'selector': 'app-shape'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SpeedMatchComponent', 'selector': 'app-speed-match'},{'name': 'SpeedMatchDialog', 'selector': 'speed-match-dialog'},{'name': 'StatsComponent', 'selector': 'app-stats'},{'name': 'TileComponent', 'selector': 'app-tile'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'OddOneOutComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'OddOneOutComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

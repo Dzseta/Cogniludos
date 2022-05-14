@@ -1,0 +1,1918 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cogniludos documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	   <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="../styles/dark.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">cogniludos documentation</a>
+            <button type="button" class="btn btn-default btn-menu ion-ios-menu" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <compodoc-menu mode="normal"></compodoc-menu>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li
+  >
+  SequenceComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/games/sequence/sequence.component.ts</code>
+</p>
+
+
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                    <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover metadata">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-sequence</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>./sequence.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./sequence.component.html</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#borderColors" >borderColors</a>
+                            </li>
+                            <li>
+                                <a href="#currentUser" >currentUser</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#dialog" >dialog</a>
+                            </li>
+                            <li>
+                                <a href="#diff" >diff</a>
+                            </li>
+                            <li>
+                                <a href="#difficulty" >difficulty</a>
+                            </li>
+                            <li>
+                                <a href="#dropListRef" >dropListRef</a>
+                            </li>
+                            <li>
+                                <a href="#isPlayable" >isPlayable</a>
+                            </li>
+                            <li>
+                                <a href="#level" >level</a>
+                            </li>
+                            <li>
+                                <a href="#maxLevel" >maxLevel</a>
+                            </li>
+                            <li>
+                                <a href="#origPlayerSequence" >origPlayerSequence</a>
+                            </li>
+                            <li>
+                                <a href="#playerSequence" >playerSequence</a>
+                            </li>
+                            <li>
+                                <a href="#potencialNumbers" >potencialNumbers</a>
+                            </li>
+                            <li>
+                                <a href="#random" >random</a>
+                            </li>
+                            <li>
+                                <a href="#score" >score</a>
+                            </li>
+                            <li>
+                                <a href="#scores" >scores</a>
+                            </li>
+                            <li>
+                                <a href="#sequence" >sequence</a>
+                            </li>
+                            <li>
+                                <a href="#startingNumber" >startingNumber</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#confirm" >confirm</a>
+                            </li>
+                            <li>
+                                <a href="#drop" >drop</a>
+                            </li>
+                            <li>
+                                <a href="#entered" >entered</a>
+                            </li>
+                            <li>
+                                <a href="#exited" >exited</a>
+                            </li>
+                            <li>
+                                <a href="#newGame" >newGame</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit" >ngOnInit</a>
+                            </li>
+                            <li>
+                                <a href="#openDialog" >openDialog</a>
+                            </li>
+                            <li>
+                                <a href="#restart" >restart</a>
+                            </li>
+                            <li>
+                                <a href="#shuffle" >shuffle</a>
+                            </li>
+                            <li>
+                                <a href="#startGame" >startGame</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor(dialog: MatDialog, scoreService: <a href="../injectables/ScoreService.html" target="_self">ScoreService</a>)</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/games/sequence/sequence.component.ts:43</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div>
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dialog</td>
+                                                  
+                                                        <td>
+                                                                    <code>MatDialog</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>scoreService</td>
+                                                  
+                                                        <td>
+                                                                        <code><a href="../injectables/ScoreService.html" target="_self" >ScoreService</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+    <section>
+    
+    <h3 id="methods">
+        Methods
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="confirm"></a>
+                    <span class="name">
+                        <span ><b>confirm</b></span>
+                        <a href="#confirm"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>confirm(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="137"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:137</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="drop"></a>
+                    <span class="name">
+                        <span ><b>drop</b></span>
+                        <a href="#drop"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>drop(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="194"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:194</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="entered"></a>
+                    <span class="name">
+                        <span ><b>entered</b></span>
+                        <a href="#entered"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>entered()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="213"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:213</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="exited"></a>
+                    <span class="name">
+                        <span ><b>exited</b></span>
+                        <a href="#exited"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>exited(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="203"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:203</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>event</td>
+                                    <td>
+                                                <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="newGame"></a>
+                    <span class="name">
+                        <span ><b>newGame</b></span>
+                        <a href="#newGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>newGame()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="75"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:75</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="ngOnInit"></a>
+                    <span class="name">
+                        <span ><b>ngOnInit</b></span>
+                        <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>ngOnInit()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="47"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:47</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="openDialog"></a>
+                    <span class="name">
+                        <span ><b>openDialog</b></span>
+                        <a href="#openDialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>openDialog()</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="189"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:189</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="restart"></a>
+                    <span class="name">
+                        <span ><b>restart</b></span>
+                        <a href="#restart"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>restart(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="182"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:182</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="shuffle"></a>
+                    <span class="name">
+                        <span ><b>shuffle</b></span>
+                        <a href="#shuffle"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>shuffle(array: any[])</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="170"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:170</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>array</td>
+                                    <td>
+                                            <code>any[]</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>    <code>{}</code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startGame"></a>
+                    <span class="name">
+                        <span ><b>startGame</b></span>
+                        <a href="#startGame"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <td class="col-md-4">
+<code>startGame(stepper: MatStepper)</code>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+                    <div class="io-line">Defined in <a href="" data-line="68"
+                            class="link-to-prism">src/app/games/sequence/sequence.component.ts:68</a></div>
+                </td>
+            </tr>
+
+
+            <tr>
+                <td class="col-md-4">
+
+                    <div class="io-description">
+                        <b>Parameters :</b>
+                        
+                        <table class="params">
+                            <thead>
+                                <tr>
+                                    <td>Name</td>
+                                    <td>Type</td>
+                                    <td>Optional</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>stepper</td>
+                                    <td>
+                                            <code>MatStepper</code>
+                                    </td>
+
+                                    <td>
+                                        No
+                                    </td>
+
+
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                    </div>
+                    <div class="io-description">
+                        <b>Returns : </b>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                    </div>
+                    <div class="io-description">
+                        
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+    <section>
+    
+    <h3 id="inputs">
+        Properties
+    </h3>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="borderColors"></a>
+                    <span class="name">
+                        <span ><b>borderColors</b></span>
+                        <a href="#borderColors"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>string[]</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/games/sequence/sequence.component.ts:39</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="currentUser"></a>
+                    <span class="name">
+                        <span ><b>currentUser</b></span>
+                        <a href="#currentUser"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/games/sequence/sequence.component.ts:23</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dialog"></a>
+                    <span class="name">
+                            <span class="modifier">Public</span>
+                        <span ><b>dialog</b></span>
+                        <a href="#dialog"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>    <code>MatDialog</code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/games/sequence/sequence.component.ts:45</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="diff"></a>
+                    <span class="name">
+                        <span ><b>diff</b></span>
+                        <a href="#diff"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/games/sequence/sequence.component.ts:41</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="difficulty"></a>
+                    <span class="name">
+                        <span ><b>difficulty</b></span>
+                        <a href="#difficulty"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/games/sequence/sequence.component.ts:24</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="dropListRef"></a>
+                    <span class="name">
+                        <span ><b>dropListRef</b></span>
+                        <a href="#dropListRef"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <b>Decorators : </b>
+                        <br />
+                        <code>
+                            @ViewChild(&#x27;dropListRef&#x27;, {static: true})<br />
+                        </code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/app/games/sequence/sequence.component.ts:43</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="isPlayable"></a>
+                    <span class="name">
+                        <span ><b>isPlayable</b></span>
+                        <a href="#isPlayable"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/app/games/sequence/sequence.component.ts:22</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="level"></a>
+                    <span class="name">
+                        <span ><b>level</b></span>
+                        <a href="#level"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/app/games/sequence/sequence.component.ts:28</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="maxLevel"></a>
+                    <span class="name">
+                        <span ><b>maxLevel</b></span>
+                        <a href="#maxLevel"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/app/games/sequence/sequence.component.ts:25</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="origPlayerSequence"></a>
+                    <span class="name">
+                        <span ><b>origPlayerSequence</b></span>
+                        <a href="#origPlayerSequence"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#numberTile" target="_self" >Array&lt;numberTile&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/app/games/sequence/sequence.component.ts:38</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="playerSequence"></a>
+                    <span class="name">
+                        <span ><b>playerSequence</b></span>
+                        <a href="#playerSequence"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#numberTile" target="_self" >Array&lt;numberTile&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/games/sequence/sequence.component.ts:37</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="potencialNumbers"></a>
+                    <span class="name">
+                        <span ><b>potencialNumbers</b></span>
+                        <a href="#potencialNumbers"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#numberTile" target="_self" >Array&lt;numberTile&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/games/sequence/sequence.component.ts:35</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="random"></a>
+                    <span class="name">
+                        <span ><b>random</b></span>
+                        <a href="#random"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/app/games/sequence/sequence.component.ts:21</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="score"></a>
+                    <span class="name">
+                        <span ><b>score</b></span>
+                        <a href="#score"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/games/sequence/sequence.component.ts:29</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="scores"></a>
+                    <span class="name">
+                        <span ><b>scores</b></span>
+                        <a href="#scores"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../interfaces/Score.html" target="_self" >Score[]</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/games/sequence/sequence.component.ts:32</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="sequence"></a>
+                    <span class="name">
+                        <span ><b>sequence</b></span>
+                        <a href="#sequence"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="../miscellaneous/typealiases.html#numberTile" target="_self" >Array&lt;numberTile&gt;</a></code>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Default value : </i><code>[]</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/games/sequence/sequence.component.ts:36</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+    <table class="table table-sm table-bordered">
+        <tbody>
+            <tr>
+                <td class="col-md-4">
+                    <a name="startingNumber"></a>
+                    <span class="name">
+                        <span ><b>startingNumber</b></span>
+                        <a href="#startingNumber"><span class="icon ion-ios-link"></span></a>
+                    </span>
+                </td>
+            </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <i>Type : </i>        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/app/games/sequence/sequence.component.ts:40</a></div>
+                        </td>
+                    </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, ElementRef, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+import { MatDialog } from &#x27;@angular/material/dialog&#x27;;
+import { MatStepper } from &#x27;@angular/material/stepper&#x27;;
+import { Score } from &#x27;../../models/score&#x27;;
+import { ScoreService } from &#x27;../../shared/services/score.service&#x27;;
+
+type numberTile &#x3D; {
+  number: number;
+  id: number;
+  temp?: boolean;
+};
+
+@Component({
+  selector: &#x27;app-sequence&#x27;,
+  templateUrl: &#x27;./sequence.component.html&#x27;,
+  styleUrls: [&#x27;./sequence.component.css&#x27;]
+})
+export class SequenceComponent implements OnInit {
+
+  // helping variables
+  random!: number;
+  isPlayable!: boolean;
+  currentUser!: any;
+  difficulty!: string;
+  maxLevel!: number;
+
+  // fix variables
+  level!: number;
+  score!: number;
+
+  // scores table
+  scores!: Score[];
+
+  // sequence
+  potencialNumbers: Array&lt;numberTile&gt; &#x3D; [];
+  sequence: Array&lt;numberTile&gt; &#x3D; [];
+  playerSequence: Array&lt;numberTile&gt; &#x3D; [];
+  origPlayerSequence: Array&lt;numberTile&gt; &#x3D; [];
+  borderColors!: string[];
+  startingNumber!: number;
+  diff!: number;
+
+  @ViewChild(&#x27;dropListRef&#x27;, { static: true}) dropListRef!: ElementRef;
+
+  constructor(public dialog: MatDialog, private scoreService: ScoreService) { }
+
+  ngOnInit(): void {
+    // initialize the fix variables
+    this.level &#x3D; 0;
+    this.score &#x3D; 0;
+    this.scores &#x3D; [];
+    this.currentUser &#x3D; JSON.parse(localStorage.getItem(&#x27;user&#x27;)!);
+    // calculate difficulty
+    this.scoreService.getAllScores(this.currentUser.email, &#x27;sq&#x27;).then(scores &#x3D;&gt;{
+      if (scores.size &lt; 5) {
+        this.difficulty &#x3D; &#x27;easy&#x27;;
+        this.maxLevel &#x3D; 4;
+      } else if (scores.size &lt; 10) {
+        this.difficulty &#x3D; &#x27;normal&#x27;;
+        this.maxLevel &#x3D; 5;
+      } else {
+        this.difficulty &#x3D; &#x27;hard&#x27;;
+        this.maxLevel &#x3D; 6;
+      }
+    });
+  }
+
+  startGame(stepper: MatStepper) {
+    stepper.selected!.completed &#x3D; true;
+    stepper.next();
+    this.newGame();
+  }
+
+  // start a new round
+  newGame() {
+    // if it was not the last round, go to the next
+    if (this.level&lt;this.maxLevel) {
+      this.level++;
+    }
+    // initialize variables
+    this.startingNumber &#x3D; Math.floor(Math.random() * 10) + 1;
+    this.sequence &#x3D; [];
+    this.playerSequence &#x3D; [];
+    this.potencialNumbers &#x3D; [];
+    this.random &#x3D; Math.floor(Math.random() * 4);
+    switch (this.random) {
+      // arithmetic sequence
+      case 0:
+        this.diff &#x3D; Math.floor(Math.random() * 20) + 1;
+        for (let i&#x3D;0; i&lt;(3+this.level); i++) {
+          this.sequence.push({ number: (this.startingNumber + i * this.diff), id: i });
+        }
+        break;
+      // geometric sequence
+      case 1:
+        this.diff &#x3D; Math.floor(Math.random() * 4) + 2;
+        for (let i&#x3D;0; i&lt;(3+this.level); i++) {
+          this.sequence.push({ number: (this.startingNumber *  Math.pow(this.diff, i)), id: i});
+        }
+        break;
+      // fibonacci
+      case 2:
+        this.diff &#x3D; Math.floor(Math.random() * 10) + 1;
+        this.sequence.push({ number: this.startingNumber, id: 0});
+        this.sequence.push({ number: (this.startingNumber+this.diff), id: 1});
+        for (let i&#x3D;0; i&lt;(3+this.level-2); i++) {
+          this.sequence.push({ number: (this.sequence[i].number+this.sequence[i+1].number), id: i+2 });
+        }
+        break;
+      // combined sequence
+      case 3:
+        this.diff &#x3D; Math.floor(Math.random() * 5) + 1;
+        for (let i&#x3D;0; i&lt;(3+this.level); i++) {
+          this.sequence.push({ number: (this.startingNumber + i * (i/2+0.5) * this.diff), id: i });
+        }
+        break;
+    } 
+    // create sequence arrays
+    this.borderColors &#x3D; Array(this.sequence.length).fill(&#x27;white&#x27;);
+    for (let i&#x3D;0; i&lt;this.sequence.length; i++) {
+      if (i%2 &#x3D;&#x3D; 0) {
+        this.playerSequence.push(this.sequence[i]);
+        this.borderColors[i] &#x3D; &#x27;rgb(171,171,171)&#x27;;
+      } else {
+        this.playerSequence.push({ number: 0, id: 99});
+        this.potencialNumbers.push(this.sequence[i]);
+        this.potencialNumbers.push({ number: (this.sequence[i].number + Math.floor(Math.random() * 20) - 10 ), id: this.sequence[i].id+100});
+      }
+    }
+    this.potencialNumbers &#x3D; this.shuffle(this.potencialNumbers);
+    this.origPlayerSequence &#x3D; [...this.playerSequence];
+    if (this.level &gt; this.maxLevel) return;
+    this.isPlayable &#x3D; true;
+  }
+
+  // make the move
+  confirm(stepper: MatStepper) {
+    if (!this.isPlayable) return;
+    this.isPlayable &#x3D; false;
+    let correct &#x3D; 0;
+    for (var i &#x3D; 0; i &lt; this.sequence.length; ++i) {
+      if (this.sequence[i].number &#x3D;&#x3D; this.playerSequence[i].number) {
+        correct++;
+        this.borderColors[i] &#x3D; &#x27;green&#x27;;
+      } else {
+        this.borderColors[i] &#x3D; &#x27;red&#x27;;
+      }
+    }
+    this.score +&#x3D; Math.floor(100 * correct / this.sequence.length);
+
+    // end game if at maxLevel
+    if (this.level &gt;&#x3D; this.maxLevel ) {
+      setTimeout(() &#x3D;&gt;{
+        const now &#x3D; new Date();
+        this.scoreService.create( { userEmail: this.currentUser.email, game: &#x27;sq&#x27;, score: this.score, difficulty: &#x27;easy&#x27;, date: now.toLocaleDateString() } );
+        this.scoreService.getUserScores(this.currentUser.email, &#x27;sq&#x27;).then(scores &#x3D;&gt;{
+          console.log(scores);
+          this.scores &#x3D; scores.docs.map(doc &#x3D;&gt; doc.data());
+        });
+        stepper.selected!.completed &#x3D; true;
+        stepper.next();
+      },3000);
+    } else {
+      setTimeout(() &#x3D;&gt;{
+        this.newGame();
+      },3000);
+    }
+  }
+
+  shuffle(array: any[]) {
+    let currentIndex &#x3D; array.length, randomIndex;
+    while (currentIndex !&#x3D; 0) {
+      randomIndex &#x3D; Math.floor(Math.random() * currentIndex);
+      currentIndex--;
+      [array[currentIndex], array[randomIndex]] &#x3D; [
+        array[randomIndex], array[currentIndex]];
+    }
+    return array;
+  }
+
+  // play again
+  restart(stepper: MatStepper) {
+    this.level &#x3D; 0;
+    this.score &#x3D; 0;
+    stepper.reset();
+  }
+
+  // open rules dialog
+  openDialog() {
+    this.dialog.open(MemoryMatrixDialog);
+  }
+
+  // drop event
+  drop(event: any) {
+    if (event.currentIndex % 2 !&#x3D;&#x3D; 0 &amp;&amp; event.container !&#x3D; event.previousContainer)  {
+      event.container.data[event.currentIndex] &#x3D; JSON.parse(JSON.stringify(event.previousContainer.data[event.previousIndex]));
+    }
+    if (event.previousContainer.data) {
+      this.potencialNumbers &#x3D; this.potencialNumbers.filter((f) &#x3D;&gt; !f.temp);
+    }
+  }
+
+  exited(event: any) {
+    const currentIdx &#x3D; event.container.data.findIndex(
+      (f: any) &#x3D;&gt; f.id &#x3D;&#x3D;&#x3D; event.item.data.id
+    );
+    this.potencialNumbers.splice(currentIdx + 1, 0, {
+      ...event.item.data,
+      temp: true,
+    });
+  }
+
+  entered() {
+    this.potencialNumbers &#x3D; this.potencialNumbers.filter((f) &#x3D;&gt; !f.temp);
+  }
+
+}
+
+@Component({
+  selector: &#x27;sequence-dialog&#x27;,
+  templateUrl: &#x27;sequence-dialog.html&#x27;,
+})
+export class MemoryMatrixDialog {
+  
+  constructor(public dialog: MatDialog) {}
+
+  // close rules dialog
+  closeDialog() {
+    this.dialog.closeAll();
+  }
+}
+
+function remove(sItems: any, arg1: { temp: boolean; }) {
+  throw new Error(&#x27;Function not implemented.&#x27;);
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;body&gt;
+    &lt;mat-stepper [linear]&#x3D;&quot;true&quot; #stepper&gt;
+        &lt;!-- Rules --&gt;
+        &lt;mat-step label&#x3D;&quot;Szabályok&quot; editable&#x3D;&quot;false&quot; state&#x3D;&quot;rules&quot; [completed]&#x3D;&quot;false&quot;&gt;
+            &lt;h2&gt;Sorozat&lt;/h2&gt;
+            &lt;img class&#x3D;&quot;banner&quot; mat-card-image src&#x3D;&quot;../../assets/sqBanner.png&quot; alt&#x3D;&quot;Sorozat borítókép&quot; width&#x3D;&quot;400&quot; &gt;
+            &lt;div class&#x3D;&quot;rules&quot;&gt;
+                &lt;button mat-button (click)&#x3D;&quot;startGame(stepper)&quot;&gt;Kezdés&lt;/button&gt;
+                &lt;button mat-button (click)&#x3D;&quot;openDialog()&quot;&gt;Szabályok&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/mat-step&gt;
+        
+        &lt;!-- Game --&gt;
+        &lt;mat-step label&#x3D;&quot;Sorozat&quot; editable&#x3D;&quot;false&quot; state&#x3D;&quot;game&quot; [completed]&#x3D;&quot;false&quot;&gt;
+            &lt;ul&gt;
+                &lt;li&gt;Szint: {{ level }}/{{ maxLevel }}&lt;/li&gt;
+                &lt;li&gt;Nehézség: {{ difficulty }}&lt;/li&gt;
+                &lt;li&gt;Pontszám: {{ score }}&lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;div class&#x3D;&quot;container&quot; cdkDropListGroup&gt;
+                &lt;table&gt;
+                    &lt;tr #dropListRef cdkDropList cdkDropListOrientation&#x3D;&quot;horizontal&quot; [cdkDropListData]&#x3D;&quot;potencialNumbers&quot; class&#x3D;&quot;list&quot; cdkDropListSortingDisabled (cdkDropListDropped)&#x3D;&quot;drop($event)&quot; (cdkDropListExited)&#x3D;&quot;exited($event)&quot; (cdkDropListEntered)&#x3D;&quot;entered()&quot;&gt;
+                      &lt;th class&#x3D;&quot;box&quot; *ngFor&#x3D;&quot;let number of potencialNumbers&quot; cdkDrag [cdkDragData]&#x3D;&quot;number&quot; [cdkDragDisabled]&#x3D;&quot;!isPlayable&quot;&gt;{{number.number}}&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;table&gt;
+                    &lt;tr cdkDropList cdkDropListOrientation&#x3D;&quot;horizontal&quot; [cdkDropListData]&#x3D;&quot;playerSequence&quot; class&#x3D;&quot;list&quot; (cdkDropListDropped)&#x3D;&quot;drop($event)&quot;&gt;
+                      &lt;th class&#x3D;&quot;box&quot; *ngFor&#x3D;&quot;let member of playerSequence&quot; cdkDrag [cdkDragDisabled]&#x3D;&quot;true&quot; style&#x3D;&quot;background-color:{{borderColors[playerSequence.indexOf(member)]}}&quot;&gt;{{member.number}}&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/table&gt;
+                &lt;button mat-button (click)&#x3D;&quot;confirm(stepper)&quot;&gt;Véglegesít&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/mat-step&gt;
+    
+        &lt;!-- Scores --&gt;
+        &lt;mat-step label&#x3D;&quot;Eredmények&quot; editable&#x3D;&quot;false&quot; state&#x3D;&quot;scores&quot;&gt;
+            &lt;h2&gt;Eredmények:&lt;/h2&gt;
+            &lt;table class&#x3D;&quot;scores&quot;&gt;
+                &lt;tr&gt;
+                    &lt;th&gt;Helyezés&lt;/th&gt;
+                    &lt;th&gt;Pontszám&lt;/th&gt;
+                    &lt;th&gt;Nehézség&lt;/th&gt;
+                    &lt;th&gt;Dátum&lt;/th&gt;
+                &lt;/tr&gt;
+              
+                &lt;tr *ngFor&#x3D;&quot;let score of scores; let i &#x3D; index&quot;&gt;
+                    &lt;td&gt;{{i+1}}.&lt;/td&gt;
+                    &lt;td&gt;{{score.score}}&lt;/td&gt;
+                    &lt;td&gt;{{score.difficulty}}&lt;/td&gt;
+                    &lt;td&gt;{{score.date}}&lt;/td&gt;
+                &lt;/tr&gt;
+            &lt;/table&gt;
+            &lt;div&gt;
+                &lt;button mat-button [routerLink]&#x3D;&quot;&#x27;/games&#x27;&quot;&gt;Játékok menü&lt;/button&gt;
+                &lt;button mat-button (click)&#x3D;&quot;restart(stepper)&quot;&gt;Új játék&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/mat-step&gt;
+    
+        &lt;!-- Icons --&gt;
+        &lt;ng-template matStepperIcon&#x3D;&quot;rules&quot;&gt;
+            &lt;mat-icon&gt;chrome_reader_mode&lt;/mat-icon&gt;
+        &lt;/ng-template&gt;
+        &lt;ng-template matStepperIcon&#x3D;&quot;game&quot;&gt;
+            &lt;mat-icon&gt;videogame_asset&lt;/mat-icon&gt;
+        &lt;/ng-template&gt;
+        &lt;ng-template matStepperIcon&#x3D;&quot;scores&quot;&gt;
+            &lt;mat-icon&gt;list_alt&lt;/mat-icon&gt;
+        &lt;/ng-template&gt;
+    &lt;/mat-stepper&gt;
+&lt;/body&gt;</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./sequence.component.css</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">body {
+    min-height: calc(100vh - 104px);
+    height: fit-content;
+    width: 100vw;
+    background-color: #101010;
+    text-align: center;
+    padding: 15px 0px;  
+}
+
+mat-stepper {
+    margin: 25px auto;
+    width: 60vw;
+    min-height: 80vh;
+    background-color: #fffff5;
+    border-radius: 32px;
+}
+
+::ng-deep .mat-horizontal-stepper-header{
+    pointer-events: none !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: black;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-done{
+    background-color: black;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 16px;
+}
+
+ul {
+    background-color: #101010;
+    color: #e6e6e6;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    padding-right: 50px;
+}
+
+.container {
+    background-color: #101010;
+    color: #e6e6e6;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+table {
+    margin: auto;
+}
+
+.list {
+    border: solid 1px #ccc;
+    background: white;
+    min-height: 60px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    overflow: hidden;
+    width: fit-content;
+    min-width: 70px;
+    margin: 50px auto 100px auto;
+}
+
+.box {
+    padding: 20px 10px;
+    border-right: solid 1px #ccc;
+    border-left: solid 1px #ccc;
+    color: rgba(0, 0, 0, 0.87);
+    align-items: center;
+    cursor: move;
+    background: white;
+    font-size: 14px;
+    width: 50px;
+    text-align: center;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+.cdk-drag:not(.cdk-drag-preview) {
+    transform: none !important;
+}
+
+.cdk-drag-placeholder {
+    opacity: 0.5;
+    background-color: #e6e6e6;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.box:last-child {
+    border: none;
+}
+
+.list.cdk-drop-list-dragging .box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.rules {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.scores {
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 16px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><body>    <mat-stepper [linear]="true" #stepper>        <!-- Rules -->        <mat-step label="Szabályok" editable="false" state="rules" [completed]="false">            <h2>Sorozat</h2>            <img class="banner" mat-card-image src="../../assets/sqBanner.png" alt="Sorozat borítókép" width="400" >            <div class="rules">                <button mat-button (click)="startGame(stepper)">Kezdés</button>                <button mat-button (click)="openDialog()">Szabályok</button>            </div>        </mat-step>                <!-- Game -->        <mat-step label="Sorozat" editable="false" state="game" [completed]="false">            <ul>                <li>Szint: {{ level }}/{{ maxLevel }}</li>                <li>Nehézség: {{ difficulty }}</li>                <li>Pontszám: {{ score }}</li>            </ul>            <div class="container" cdkDropListGroup>                <table>                    <tr #dropListRef cdkDropList cdkDropListOrientation="horizontal" [cdkDropListData]="potencialNumbers" class="list" cdkDropListSortingDisabled (cdkDropListDropped)="drop($event)" (cdkDropListExited)="exited($event)" (cdkDropListEntered)="entered()">                      <th class="box" *ngFor="let number of potencialNumbers" cdkDrag [cdkDragData]="number" [cdkDragDisabled]="!isPlayable">{{number.number}}</th>                    </tr>                </table>                <table>                    <tr cdkDropList cdkDropListOrientation="horizontal" [cdkDropListData]="playerSequence" class="list" (cdkDropListDropped)="drop($event)">                      <th class="box" *ngFor="let member of playerSequence" cdkDrag [cdkDragDisabled]="true" style="background-color:{{borderColors[playerSequence.indexOf(member)]}}">{{member.number}}</th>                    </tr>                </table>                <button mat-button (click)="confirm(stepper)">Véglegesít</button>            </div>        </mat-step>            <!-- Scores -->        <mat-step label="Eredmények" editable="false" state="scores">            <h2>Eredmények:</h2>            <table class="scores">                <tr>                    <th>Helyezés</th>                    <th>Pontszám</th>                    <th>Nehézség</th>                    <th>Dátum</th>                </tr>                              <tr *ngFor="let score of scores; let i = index">                    <td>{{i+1}}.</td>                    <td>{{score.score}}</td>                    <td>{{score.difficulty}}</td>                    <td>{{score.date}}</td>                </tr>            </table>            <div>                <button mat-button [routerLink]="\'/games\'">Játékok menü</button>                <button mat-button (click)="restart(stepper)">Új játék</button>            </div>        </mat-step>            <!-- Icons -->        <ng-template matStepperIcon="rules">            <mat-icon>chrome_reader_mode</mat-icon>        </ng-template>        <ng-template matStepperIcon="game">            <mat-icon>videogame_asset</mat-icon>        </ng-template>        <ng-template matStepperIcon="scores">            <mat-icon>list_alt</mat-icon>        </ng-template>    </mat-stepper></body></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'ChalkboardComponent', 'selector': 'app-chalkboard'},{'name': 'ChalkboardDialog', 'selector': 'chalkboard-dialog'},{'name': 'ColourMatchComponent', 'selector': 'app-colour-match'},{'name': 'ColourMatchDialog', 'selector': 'colour-match-dialog'},{'name': 'ContactComponent', 'selector': 'app-contact'},{'name': 'ContinuumComponent', 'selector': 'app-continuum'},{'name': 'FooterComponent', 'selector': 'app-footer'},{'name': 'GamesComponent', 'selector': 'app-games'},{'name': 'HeaderComponent', 'selector': 'app-header'},{'name': 'HelpComponent', 'selector': 'app-help'},{'name': 'LoginComponent', 'selector': 'app-login'},{'name': 'MainComponent', 'selector': 'app-main'},{'name': 'MemoryMatrixComponent', 'selector': 'app-memory-matrix'},{'name': 'MemoryMatrixDialog', 'selector': 'continuum-dialog'},{'name': 'MemoryMatrixDialog', 'selector': 'memory-matrix-dialog'},{'name': 'MemoryMatrixDialog', 'selector': 'odd-one-out-dialog'},{'name': 'MemoryMatrixDialog', 'selector': 'sequence-dialog'},{'name': 'ModifydataComponent', 'selector': 'app-modifydata'},{'name': 'OddOneOutComponent', 'selector': 'app-odd-one-out'},{'name': 'SequenceComponent', 'selector': 'app-sequence'},{'name': 'ShapeComponent', 'selector': 'app-shape'},{'name': 'SignupComponent', 'selector': 'app-signup'},{'name': 'SpeedMatchComponent', 'selector': 'app-speed-match'},{'name': 'SpeedMatchDialog', 'selector': 'speed-match-dialog'},{'name': 'StatsComponent', 'selector': 'app-stats'},{'name': 'TileComponent', 'selector': 'app-tile'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'SequenceComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+          <label class="dark-mode-switch">
+               <input type="checkbox">
+               <span class="slider">
+                    <svg class="slider-icon" viewBox="0 0 24 24" fill="none" height="20" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" width="20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"></path>
+                    </svg>
+               </span>
+          </label>
+
+       <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'SequenceComponent.html';
+            var MAX_SEARCH_RESULTS = 15;
+       </script>
+
+       <script src="../js/libs/custom-elements.min.js"></script>
+       <script src="../js/libs/lit-html.js"></script>
+
+       <script src="../js/menu-wc.js" defer></script>
+       <script nomodule src="../js/menu-wc_es5.js" defer></script>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/clipboard.min.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+          <script src="../js/search/search.js"></script>
+          <script src="../js/search/lunr.min.js"></script>
+          <script src="../js/search/search-lunr.js"></script>
+          <script src="../js/search/search_index.js"></script>
+       <script src="../js/lazy-load-graphs.js"></script>
+
+
+    </body>
+</html>

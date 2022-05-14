@@ -1,0 +1,24 @@
+<style>
+    button {
+        text-align: center;
+        text-decoration: none;
+        font-size: 14px;
+        margin-top: 10px;
+        padding: 10px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+        border-radius: 16px;
+        background-color: #ffc107;
+    }
+</style>
+<h1 mat-dialog-title>Kakukktojás</h1>
+<div mat-dialog-content>A játék 60 másodpercig tart.</div>
+<div mat-dialog-content>Megjelenik a képernyőn több különböző formájú és színű alakzat.</div>
+<div mat-dialog-content>A játékosnak ki kell választania a kakukktojást, azt a formát amelyikből csak 1 van.</div>
+<div mat-dialog-content>Ezután egy új alakzatcsoport jelenik meg.</div>
+<div mat-dialog-content>A játékos célja minél több kakukktojást megtalálnia az idő lejárta előtt.</div>
+<div mat-dialog-content>A játékos 100 pontot kap minden helyesen eltalált alakzat után, 100-at veszít minden hibásért.</div>
+<div mat-dialog-content>Az idő lejártával a játék véget ér és megtekinthető a végső pontszám.</div>
+<div mat-dialog-actions>
+    <button mat-button (click)="closeDialog()">Bezárás</button>
+</div>

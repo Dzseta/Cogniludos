@@ -1,0 +1,125 @@
+body {
+    min-height: calc(100vh - 104px);
+    height: fit-content;
+    max-width: 100%;
+    background-color: #101010;
+    text-align: center;
+    padding: 15px 0px;  
+}
+
+mat-stepper {
+    margin: 25px auto;
+    width: 60vw;
+    min-height: 80vh;
+    background-color: #fffff5;
+    border-radius: 32px;
+}
+
+::ng-deep .mat-horizontal-stepper-header{
+    pointer-events: none !important;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-selected {
+    background-color: black;
+}
+
+::ng-deep .mat-step-header .mat-step-icon-state-done{
+    background-color: black;
+}
+
+.banner {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    width: 50%;
+    border-radius: 16px;
+}
+
+ul {
+    background-color: #101010;
+    color: #e6e6e6;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+li {
+    display: inline;
+    padding-right: 50px;
+}
+
+.words-list {
+    background-color: #101010;
+    color: #e6e6e6;
+    min-height: 60px;
+    display: block;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.word-box {
+    width: 300px;
+    text-align: center;
+    margin: 10px auto;
+    padding: 20px 10px;
+    border-bottom: solid 1px #101010;
+    color: #101010;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    cursor: move;
+    background-color: #e6e6e6;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.cdk-drag-preview {
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
+                0 8px 10px 1px rgba(0, 0, 0, 0.14),
+                0 3px 14px 2px rgba(0, 0, 0, 0.12);
+}
+
+.cdk-drag-placeholder {
+    opacity: 0;
+}
+
+.cdk-drag-animating {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.example-box:last-child {
+    border: none;
+}
+
+.example-list.cdk-drop-list-dragging .example-box:not(.cdk-drag-placeholder) {
+    transition: transform 250ms cubic-bezier(0, 0, 0.2, 1);
+}
+
+.rules {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+button {
+    margin: 20px;
+}
+
+table {
+    width: 80%;
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 16px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}

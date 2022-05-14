@@ -1,0 +1,68 @@
+<main>
+  <mat-tab-group mat-align-tabs="center"> 
+    <mat-tab label="Profil adatok">
+      <section>
+        <img src="../../../favicon.png" alt="LOGO" class="bi me-2" width="32" height="32">
+        <h1>Adatok módosítása</h1>
+      
+        <form
+          fxLayout="column"
+          fxLayoutAlign="center center"
+          fxLayoutGap="10px"
+          [formGroup]="modifyForm"
+          (ngSubmit)="onSubmit()">
+        
+          <mat-form-field>
+            <mat-label>Felhasználónév</mat-label>
+            <input type="text" matInput placeholder="PeldaNev01" formControlName="username">
+            <mat-error *ngIf="modifyForm.get('username')!.hasError('usedUsername')">Ez a név már foglalt.</mat-error>
+            <mat-error *ngIf="modifyForm.get('username')!.hasError('required')">A mező nem lehet üres.</mat-error>
+            <mat-error *ngIf="!modifyForm.get('username')!.hasError('required')">Helytelen felhasználónév.</mat-error>
+          </mat-form-field>
+      
+          <mat-form-field>
+            <mat-label>Születési dátum</mat-label>
+            <input type="date" matInput placeholder="2000.01.01" formControlName="date">
+            <mat-error *ngIf="modifyForm.get('date')!.hasError('required')">Helytelen dátum.</mat-error>
+          </mat-form-field>
+      
+          <mat-form-field>
+            <mat-label>Nem</mat-label>
+            <mat-select matInput formControlName="gender">
+              <mat-option *ngFor="let gender of genders" [value]="gender.value">
+                {{gender.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      
+          <mat-form-field>
+            <mat-label>Tanulmányok</mat-label>
+            <mat-select formControlName="education">
+              <mat-option *ngFor="let education of educations" [value]="education.value">
+                {{education.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      
+          <button type="submit" mat-raised-button>Adatok megváltoztatása</button>
+        </form>
+      </section>
+    </mat-tab>
+    <mat-tab label="Prémium">
+      <div class="premium">A prémium felhasználók részletes statisztikákat kapnak a teljesítményükről.</div>
+      <div class="premium">A fiók prémium szintre emeléséhez mindegyik játékból legalább 10 meccset kell lejátszani.</div>
+      <table>
+        <tr>
+            <th>Játék</th>
+            <th>Hiányzó meccsek</th>
+        </tr>
+      
+        <tr *ngFor="let game of games; let i = index">
+            <td>{{game.name}}.</td>
+            <td>{{game.missing}}</td>
+        </tr>
+      </table>
+      <button (click)="getPremium()" *ngIf="missingGames===0 && !premiumUser" mat-raised-button>Előlépés prémiumra</button>
+    </mat-tab>
+  </mat-tab-group>  
+</main>

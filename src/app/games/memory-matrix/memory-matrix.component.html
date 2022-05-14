@@ -1,0 +1,75 @@
+<body>
+    <mat-stepper [linear]="true" #stepper>
+        <!-- Rules -->
+        <mat-step label="Szabályok" editable="false" state="rules" [completed]="false">
+            <h2>Memória Mátrix</h2>
+            <img class="banner" mat-card-image src="../../assets/mmBanner.png" alt="Memória Mátrix borítókép" width="400" >
+            <div class="rules">
+                <button mat-button (click)="startGame(stepper)">Kezdés</button>
+                <button mat-button (click)="openDialog()">Szabályok</button>
+            </div>
+        </mat-step>
+        
+        <!-- Game -->
+        <mat-step label="Memória Mátrix" editable="false" state="game" [completed]="false">
+            <ul>
+                <li>Szint: {{ level }}/{{ maxLevel }}</li>
+                <li>Nehézség: {{ difficulty }}</li>
+                <li>Pontszám: {{ score }}</li>
+                <li>Hátralévő lépések: {{ lightTiles - guesses }}/{{ lightTiles }}</li>
+            </ul>
+            <div class="container">
+                <div class="tileGrid">
+                    <app-tile
+                        *ngFor="let val of squares; let i = index"
+                        [value]="val"
+                        (click)="makeMove(i, stepper)">
+                    </app-tile>
+                </div>
+            </div>
+        </mat-step>
+    
+        <!-- Scores -->
+        <mat-step label="Eredmények" editable="false" state="scores">
+            <h2>Elért eredmény:</h2>
+            <table>
+                <tr>
+                    <th>Pontszám: {{score}}</th>
+                    <th>Nehézség: {{difficulty}}</th>
+                    <th>Találati arány: {{(right/(right+wrong)).toFixed(2)}}</th>
+                </tr>
+            </table>
+            <h2>Legjobb eredmények:</h2>
+            <table>
+                <tr>
+                    <th>Helyezés</th>
+                    <th>Pontszám</th>
+                    <th>Nehézség</th>
+                    <th>Dátum</th>
+                </tr>
+              
+                <tr *ngFor="let score of scores; let i = index">
+                    <td>{{i+1}}.</td>
+                    <td>{{score.score}}</td>
+                    <td>{{score.difficulty}}</td>
+                    <td>{{score.date}}</td>
+                </tr>
+            </table>
+            <div>
+                <button mat-button [routerLink]="'/games'">Játékok menü</button>
+                <button mat-button (click)="restart(stepper)">Új játék</button>
+            </div>
+        </mat-step>
+    
+        <!-- Icons -->
+        <ng-template matStepperIcon="rules">
+            <mat-icon>chrome_reader_mode</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="game">
+            <mat-icon>videogame_asset</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="scores">
+            <mat-icon>list_alt</mat-icon>
+        </ng-template>
+    </mat-stepper>
+</body>

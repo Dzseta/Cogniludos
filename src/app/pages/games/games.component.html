@@ -1,0 +1,14 @@
+<body>
+    <div class="warning" *ngIf="!loggedInUser">A játékok kipróbálásához lépjen be!</div>
+    <div class="container">
+        <mat-card *ngFor="let game of games">
+            <mat-card-title>{{ game.title }}</mat-card-title>
+            <mat-card-subtitle>{{ game.subtitle }}</mat-card-subtitle>
+            <img mat-card-image src={{game.icon}} alt="Játék borítókép">
+            <mat-card-actions>
+                <button mat-button [disabled]="!loggedInUser" [routerLink]=[game.route]>JÁTÉK</button>
+                <button mat-button class="asd" [routerLink]="'/help'">SZABÁLYOK</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</body>

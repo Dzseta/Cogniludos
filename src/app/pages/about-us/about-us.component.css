@@ -1,0 +1,31 @@
+body {
+    min-height: calc(100vh - 104px);
+    height: fit-content;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #101010;
+    color: #fffff5;
+    padding: 50px;
+}
+
+.container {
+    box-sizing: border-box;
+    background-color: #fffff5;
+    color: #000;
+    border-radius: 32px;
+    height: fit-content;
+    width: 35vw;
+    list-style-type: none;
+    margin: 30px auto;
+    padding: 50px;
+    text-align: justify;
+}
+
+h1 {
+    font-weight: bold;
+    text-align: center;
+}
+
+div {
+    padding: 20px;
+}

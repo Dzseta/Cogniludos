@@ -1,0 +1,39 @@
+<html>
+    <h1>Gyakran ismételt kérdések</h1>
+
+    <h2>Profil</h2>
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="false" *ngFor="let question of profile">
+        <mat-expansion-panel-header>
+            {{ question.question }}
+        </mat-expansion-panel-header>
+        <mat-panel-description>
+            {{ question.answer }}
+        </mat-panel-description>
+     </mat-expansion-panel>
+    </mat-accordion>
+
+    <h2>Játékszabályok</h2>
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="false" *ngFor="let question of rules">
+        <mat-expansion-panel-header>
+            {{ question.question }}
+        </mat-expansion-panel-header>
+        <mat-panel-description>
+            {{ question.answer }}
+        </mat-panel-description>
+     </mat-expansion-panel>
+    </mat-accordion>
+
+    <h2>Statisztikák</h2>
+    <mat-accordion>
+      <mat-expansion-panel [expanded]="false" *ngFor="let question of stats">
+        <mat-expansion-panel-header>
+            {{ question.question }}
+        </mat-expansion-panel-header>
+        <mat-panel-description>
+            {{ question.answer }}
+        </mat-panel-description>
+     </mat-expansion-panel>
+    </mat-accordion>
+</html>

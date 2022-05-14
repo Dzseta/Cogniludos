@@ -1,0 +1,31 @@
+<div class="container">
+  <a class="logo" [routerLink]="'/main'">
+    <img src="../../../assets/logoName.png" alt="LOGO" height="32">
+  </a>
+
+  <span class="nav" fxHide.lt-md="">
+    <button mat-button [routerLink]="'/main'">Főoldal</button>
+    <button mat-button [routerLink]="'/stats'" *ngIf="premiumUser">Statisztikák</button>
+    <button mat-button [routerLink]="'/admin'" *ngIf="adminUser">Irányító panel</button>
+    <button mat-button [routerLink]="'/games'">Játékok</button>
+  </span>
+
+  <mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav [mode]="'over'" class="sidenav" [fixedInViewport]="true" fxFlex fxLayout="column" >
+      <a mat-button [routerLink]="'/main'" (click)="sidenav.toggle()">Főoldal</a>
+      <a mat-button [routerLink]="'/stats'" *ngIf="premiumUser" (click)="sidenav.toggle()">Statisztikák</a>
+      <a mat-button [routerLink]="'/admin'" *ngIf="adminUser" (click)="sidenav.toggle()">Irányító panel</a>
+      <a mat-button [routerLink]="'/games'" (click)="sidenav.toggle()">Játékok</a>
+    </mat-sidenav>
+  </mat-sidenav-container>
+
+  <div class="buttons">
+    <button mat-button (click)="sidenav.toggle()" fxHide.gt-sm>
+      <mat-icon>menu</mat-icon>
+    </button>
+    <button class="authbutton" mat-raised-button *ngIf="!(loggedInUser)" [routerLink]="'/login'">Bejelentkezés</button>
+    <button class="authbutton" mat-raised-button *ngIf="loggedInUser" [routerLink]="'/main'" (click)="logout(true)">Kijelentkezés</button>
+    <button class="authbutton" mat-raised-button *ngIf="!(loggedInUser)" [routerLink]="'/signup'">Regisztráció</button>
+    <button class="authbutton" mat-raised-button *ngIf="loggedInUser" [routerLink]="'/edit'">Profil</button>
+  </div>
+</div>
